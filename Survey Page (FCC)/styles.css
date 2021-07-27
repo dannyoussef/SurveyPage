@@ -1,0 +1,36 @@
+html {
+    height: 100%;
+    width: 100%;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+body {
+    text-align: center;
+}
+
+h1 {
+    font-size: 30px;
+}
+p {
+    font-size: 20px;
+}
+
+#form-wrapper {
+    display: grid;
+    margin: auto;
+    width: 80%;
+    padding: 20px;
+    background-color: lightgray;
+}
+
+label {
+    padding-bottom: 10px;
+}
+
+.form-group {
+    padding-bottom: 25px;
+}
+
+#submit {
+    width: 100px;
+}

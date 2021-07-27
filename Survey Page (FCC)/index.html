@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div id="header-wrapper">
+        <h1 id="title"><b>Survey Form</b></h1>
+        <p id="description">Let us know more about you!</p>
+    </div>
+    <form id="survey-form">
+        <div id="form-wrapper">
+            <div class="form-group">
+                <label for="name" id="name-label"><b>Name</b></label>
+                <input type="text" id="name" placeholder="Enter your name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email" id="email-label"><b>Email</b>
+                    <input type="email" id="email" placeholder="Enter your email" required>
+                </label>
+            </div>
+
+            <div class="form-group">
+                <label for="number" id="number-label"><b>Age</b>
+                    <input type="number" id="number" placeholder="Age" min="10" max="99" required>
+                </label>
+            </div>
+
+            <div class="form-group">
+                <label for="dropdown" id="dropdown-label"><b>Describe your current occupation.</b>
+                    <select name="occupation" id="dropdown">
+                        <option value="student">Student</option>
+                        <option value="recent-grad">Recent Graduate</option>
+                        <option value="employee">Employee</option>
+                        <option value="prefer-not-to-say">Prefer not to say</option>
+                        <option value="other">Other</option>
+                    </select>
+                </label>
+            </div>
+
+            <div class="form-group">
+                <label for="radio-name" id="radio-buttons-label"><b>Which of these best describes your programming skill
+                        level?</b>
+                    <input type="radio" name="dev-skill" value="beginner" id="beginner">Beginner
+                    <input type="radio" name="dev-skill" value="intermediate" id="intermediate">Intermediate
+                    <input type="radio" name="dev-skill" value="advanced" id="advanced">Advanced
+                    <input type="radio" name="dev-skill" value="expert" id="expert">Expert
+                </label>
+            </div>
+
+            <div class="form-group">
+                <label for="checkboxes" id="checkboxes-label"><b>Choose the subjects you wish to improve on.</b>
+                    <input type="checkbox" value="data-structures">Data Structures
+                    <input type="checkbox" value="algorithms">Algorithms
+                    <input type="checkbox" value="oo-programming">Object-oriented Programming
+                    <input type="checkbox" value="discrete-math">Discrete Math
+                </label>
+            </div>
+            <div class="form-group">
+                <label for="comments" id="comments-label"><b>Additional comments?</b>
+                    <textarea name="comments" id="comments" cols="30" rows="10"></textarea>
+                </label>
+            </div>
+
+            <div class="form-group">
+                <div id="submit-wrapper">
+                    <button type="submit" id="submit">Submit</button>
+                </div>
+            </div>
+        </div>
+    </form>
+</body>
+
+</html>
